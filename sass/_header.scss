@@ -1,0 +1,182 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+$white:#ffffff;
+$whitD:#e9ecef;
+$black:#000;
+$leatter:#212529;
+$red:#d00000;
+$blue:#0466c8;
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+        width: 100%;
+        height: 5em;
+    background-color:$white ;
+    -webkit-box-shadow: 0 .25em 1.5625em -1.375em $black;
+            box-shadow: 0 .25em 1.5625em -1.375em $black;
+
+    z-index: 2;
+
+.header-container{
+     max-width: 1200px;
+    margin:auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+   
+    .logo{ 
+        height: 5em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+                    h1{font-size: 1.5625em; text-transform: uppercase; letter-spacing: .0625em; text-shadow: 1px 1px .625em $blue ; color:$leatter;&::first-letter{color: $blue;}}                  
+        }
+    }
+    .menu{
+        height: 5em;
+        nav{
+            height: 100%;
+            ul{
+                height: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+               list-style: none;
+            li{
+                height: 100%;
+                margin: 0 .25em;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                 -webkit-box-align: center;
+                     -ms-flex-align: center;
+                         align-items: center;
+                -ms-flex-line-pack: center;
+                    align-content: center;
+                    position: relative;
+                    a{
+                        color: $leatter;
+                        font-weight: bold;
+                      
+                    &:hover{
+                        color: $blue;
+
+                           &::before{
+                                    content: '';
+                                    width: 100%;
+                                    height: .25em;
+                                    border-radius: .75em;
+                                    background-color: $blue;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                }
+                    }
+                }            
+            }
+            .menu-select{
+                a{
+                    color: $blue;
+                }
+               
+            }
+            }
+
+        }
+        @media (max-width:800px) {
+            width:0;
+            
+            position: fixed;
+            overflow: hidden;
+            top: 5em;
+            height: 100vh;
+            background-color: $white;
+            -webkit-box-shadow: .625em 0 1.25em -1.5625rem $black;
+                    box-shadow: .625em 0 1.25em -1.5625rem $black;
+            left: 0; 
+            -webkit-transition: .8s ease all; 
+            -o-transition: .8s ease all; 
+            transition: .8s ease all;
+
+            &.show-menu{
+                width: 18.75em;
+                -webkit-transform: scale(1.3);
+                    -ms-transform: scale(1.3);
+                        transform: scale(1.3);
+            }
+            nav{
+                ul{
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    li{
+                        max-width: 12.5em;
+                        height: 3.125em;
+                        a{
+                            padding: .3125em;
+                            border-radius: .1875em;
+                            &:hover{
+                                color: $white;
+                                background-color: $leatter;
+                                &::before{
+                                    height: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+#icon-menu{
+    color: $blue;
+    width: 3.125em;
+    height: 3.125em;
+   
+    background-color:$whitD ;
+    font-size: 1.25em;
+    border-radius: 50%;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+    &:hover{
+        opacity: .8;
+    }
+    @media (max-width:800px){
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+ }
+
+}
+ 
+}

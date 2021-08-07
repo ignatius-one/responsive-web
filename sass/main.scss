@@ -1,0 +1,61 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+@import 'header';
+@import 'cover';
+@import 'articles';
+@import 'footer';
+
+$white:#ffffff;
+$black:#000;
+$leatter:#212529;
+$red:#d00000;
+$blue:#0466c8;
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    &::-webkit-scrollbar{
+        background-color: $white;
+        width: .75em;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $blue;
+        border-radius: .75em;
+    }
+}
+
+
+@media (max-width:800px){
+    .conatiner-all{
+        -webkit-transition: .8s ease all;
+        -o-transition: .8s ease all;
+        transition: .8s ease all;
+   &.moves{
+       -webkit-transform: translateX(calc(18.75em));
+           -ms-transform: translateX(calc(18.75em));
+               transform: translateX(calc(18.75em));
+   }
+}
+}
+@media (max-width:700px) {
+    body{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    body{
+        font-size: 14px;
+    }
+}

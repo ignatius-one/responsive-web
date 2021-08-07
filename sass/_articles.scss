@@ -1,0 +1,121 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+
+$white:#ffffff;
+$black:#000;
+$leatter:#212529;
+$red:#d00000;
+$blue:#0466c8;
+
+@mixin button($bgcolor,$color) {
+    margin-top: .75em;
+    background-color: $blue;
+    color: $white;
+    border-radius: .375em;
+    outline: none;
+    font-size:1rem;
+    border: none;
+    padding: .3125em;
+    cursor: pointer;
+    &:hover{
+        opacity: .9;
+    }
+}
+
+.conatiner-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+   margin: auto;
+   color: $leatter;
+   @media (max-width:950px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    }
+      h1{
+        font-size: 2.1875em;
+        font-weight: 500;
+        padding: .625em;
+    }
+    h2{
+        font-size: 1.875em;
+        font-weight: 500;
+        padding: .625em;
+    }
+    p{
+        margin-top: .75em;
+        font-size: 1.125em;
+        padding: .625em;
+    }
+    img{
+        margin-top: .75em;
+        width: 100%;
+    }
+    article{
+        margin-top:2.5em;
+       letter-spacing: .0625em;
+       padding: 1.25em;
+       padding-bottom: 2.5em;
+       border-radius: .375em;
+       overflow: hidden;
+       -webkit-box-shadow: -0.625em 0 1.25em -1.875em $black;
+               box-shadow: -0.625em 0 1.25em -1.875em $black;
+        position: relative;
+       &::before{
+        content: '';
+        width: 100%;
+        height: .375em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $blue;
+    }
+ 
+    }
+    // aside 
+    .container-content-aside{
+         @media (max-width:950px) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row wrap;
+                    flex-flow: row wrap;
+            gap: .75rem;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            }  
+        aside{
+            margin-top:2.5em;
+           width: 20em;  
+           border-radius: .75em;
+           overflow: hidden;         
+           border-right: .375em;
+           -webkit-box-shadow: 0 0 1.25em -1.25em $black;
+                   box-shadow: 0 0 1.25em -1.25em $black;
+            margin-left: 2.5em;
+             
+             
+            img{
+                margin-top: 0;
+            }
+            button{
+                @include button($blue,$white );
+                margin-left: .3125em;
+            }
+        }
+    }
+   
+}
+
