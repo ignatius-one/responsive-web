@@ -40,6 +40,7 @@ $blue:#0466c8;
     padding: .75em;
     display: flex;
     flex-wrap: wrap;
+  
     gap: 1.25em;
    
     label{
@@ -61,7 +62,8 @@ $blue:#0466c8;
 [value="JS"],
 [value="PHP"],
 [value="other"]{
-    animation: show-hidden 2s ease;
+    -webkit-animation: show-hidden 2s ease;
+            animation: show-hidden 2s ease;
 }
 
 [value="all"]:checked ~ .posts .post[data-category]{
@@ -127,7 +129,8 @@ $blue:#0466c8;
                     border-radius: .375em;
                     width:100%;
                     height: 100%;
-                    object-fit: cover;
+                    -o-object-fit: cover;
+                       object-fit: cover;
                 }
             }
             h2{

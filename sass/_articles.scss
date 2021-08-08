@@ -98,14 +98,16 @@ $blue:#0466c8;
             }  
         aside{
             margin-top:2.5em;
-           width: 20em;  
-           border-radius: .75em;
-           overflow: hidden;         
-           border-right: .375em;
-           -webkit-box-shadow: 0 0 1.25em -1.25em $black;
-                   box-shadow: 0 0 1.25em -1.25em $black;
+            
+            width: 20em;  
+            border-radius: .75em;
+            overflow: hidden;         
+            border-right: .375em;
+            -webkit-box-shadow: 0 0 1.25em -1.25em $black;
+            box-shadow: 0 0 1.25em -1.25em $black;
             margin-left: 2.5em;
-             
+            padding-bottom: 1.25em;
+            
              
             img{
                 margin-top: 0;
