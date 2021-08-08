@@ -40,7 +40,7 @@ $blue:#0466c8;
     padding: .75em;
     display: flex;
     flex-wrap: wrap;
-  
+    
     gap: 1.25em;
    
     label{
@@ -51,7 +51,6 @@ $blue:#0466c8;
         margin-left: 1.25em;
         cursor: pointer;
         border-radius: .3125em;
-        transition: .8s ease all;
         &:hover{
             opacity: .8;
         }
@@ -103,9 +102,9 @@ $blue:#0466c8;
         display: grid;
         gap: 1.25em;
         grid-template-columns: repeat(3,1fr);
-        
         margin-top: 1.25em;
         padding: 1.25em;
+
         @media (max-width:1024px) {
             grid-template-columns: repeat(2,1fr);
         }
@@ -116,13 +115,38 @@ $blue:#0466c8;
         .post{
             width: 18.75em;
             background-color:$white;
-            // padding-bottom: .75em;
             box-shadow: 0 0 1.25em -1.25em $black ;
             border-radius: .375em;
             overflow: hidden;
             padding: 1.25em;
-            transition: .8s ease;
+                            -webkit-animation: a .3s ease;
 
+
+                                animation: a .3s ease;
+
+
+                                @-webkit-keyframes a {
+                                    0%{
+                                        -webkit-transform: scale(0);
+                                                transform: scale(0);
+                                    }
+                                    100%{
+                                        -webkit-transform: scale(1);
+                                                transform: scale(1);
+                                    }
+                                }
+
+
+                                @keyframes a {
+                                    0%{
+                                        -webkit-transform: scale(0);
+                                                transform: scale(0);
+                                    }
+                                    100%{
+                                        -webkit-transform: scale(1);
+                                                transform: scale(1);
+                                    }
+                                }
             .ctn-img{
                 width: 100%;
                 img{
@@ -173,3 +197,110 @@ $blue:#0466c8;
     }
 
 }
+
+
+// html code 
+
+//   <div class="container-post">
+  
+//     <!-- FILTRE  -->
+//     <input type="radio" id="all" name="categories" value="all" checked>
+//     <input type="radio" id="HTML" name="categories" value="HTML">
+//     <input type="radio" id="CSS" name="categories" value="CSS">
+//     <input type="radio" id="JS" name="categories" value="JS">
+//     <input type="radio" id="PHP" name="categories" value="PHP">
+//     <input type="radio" id="other" name="categories" value="other">
+
+//     <div class="container-category">
+
+//         <label for="all">All</label>
+//         <label for="HTML">HTML</label>
+//         <label for="CSS">CSS</label>
+//         <label for="JS">JS</label>
+//         <label for="PHP">PHP</label>
+//         <label for="other">other</label>
+        
+//     </div>
+
+
+//         <div class="posts">
+
+//         <div class="post" data-category="HTML">
+//             <div class="ctn-img">
+//                 <img src="./src/media-blog/how-page-html-css.jpg" alt="" srcset="">
+//             </div>
+//             <h2>How To Create a page web with Html & Css </h2>
+//             <span>26 February 2020 1:34 pm </span>
+//             <ul class="ctn-tag">
+//                 <li>HTML</li>
+//                 <li>CSS</li>
+//             </ul>
+//             <a href="#">Read More</a>
+//         </div>
+
+//         <div class="post" data-category="JS">
+//             <div class="ctn-img">
+//                 <img src="./src/media-blog/code-js.jpg" alt="" srcset="">
+//             </div>
+//             <h2>How To Learn Js & PHP </h2>
+//             <span>26 February 2020 1:34 pm </span>
+//             <ul class="ctn-tag">
+//                 <li>JS</li>
+//                 <li>PHP</li>
+//             </ul>
+//             <a href="#">Read More</a>
+//         </div>
+
+//         <div class="post" data-category="CSS">
+//             <div class="ctn-img">
+//                 <img src="./src/media-blog/code-css.jpg" alt="" srcset="">
+//             </div>
+//             <h2>How To Learn CSS </h2>
+//             <span>26 February 2020 1:34 pm </span>
+//             <ul class="ctn-tag">
+//                 <li>CSS</li>
+//             </ul>
+//             <a href="#">Read More</a>
+//         </div>
+
+//         <div class="post" data-category="HTML">
+//             <div class="ctn-img">
+//                 <img src="./src/media-blog/html.jpg" alt="" srcset="">
+//             </div>
+//             <h2>How To Learn HTML  </h2>
+//             <span>26 February 2020 1:34 pm </span>
+//             <ul class="ctn-tag">
+//                 <li>HTML</li>
+//             </ul>
+//             <a href="#">Read More</a>
+//         </div>
+
+//         <div class="post" data-category="other" >
+//             <div class="ctn-img">
+//                 <img src="./src/media/slide-img3.jpg" alt="" srcset="">
+//             </div>
+//             <h2>How to decorate your house </h2>
+//             <span>26 February 2020 1:34 pm </span>
+//             <ul class="ctn-tag">
+//                 <li>other</li>
+//             </ul>
+//             <a href="#">Read More</a>
+//         </div>
+
+//         <div class="post" data-category="other">
+//             <div class="ctn-img">
+//                 <img src="./src/media/slide-img4.jpg" alt="" srcset="">
+//             </div>
+//             <h2>How to sell and buy domestic </h2>
+//             <span>26 February 2020 1:34 pm </span>
+//             <ul class="ctn-tag">
+//                 <li>other</li>
+//             </ul>
+//             <a href="#">Read More</a>
+//         </div>
+
+       
+//    </div>
+//    <!-- end container-post  -->
+//    </div>
+

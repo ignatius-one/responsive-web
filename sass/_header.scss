@@ -18,7 +18,7 @@ header{
     left: 0;
         width: 100%;
         height: 5em;
-    background-color:$white ;
+    background-color:$white;
     -webkit-box-shadow: 0 .25em 1.5625em -1.375em $black;
             box-shadow: 0 .25em 1.5625em -1.375em $black;
 
@@ -46,6 +46,11 @@ header{
                 justify-content: center;
                     h1{font-size: 1.5625em; text-transform: uppercase; letter-spacing: .0625em; text-shadow: 1px 1px .625em $blue ; color:$leatter;&::first-letter{color: $blue;}}                  
         }
+
+
+
+
+
     }
     .menu{
         height: 5em;
@@ -146,7 +151,7 @@ header{
             }
         }
     }
-#icon-menu{
+    #icon-menu{
     color: $blue;
     width: 3.125em;
     height: 3.125em;
@@ -172,7 +177,6 @@ header{
      display: -ms-flexbox;
      display: flex;
  }
-
 }
- 
+
 }

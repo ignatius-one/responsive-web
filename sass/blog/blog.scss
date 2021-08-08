@@ -1,6 +1,7 @@
 
 
 @import '../header';
+@import 'search';
 @import 'coverblog';
 @import 'posts&filtre';
 @import '../footer';
@@ -31,18 +32,7 @@ body{
 }
 
 
-@media (max-width:800px){
-//     .conatiner-all{
-//         -webkit-transition: .8s ease all;
-//         -o-transition: .8s ease all;
-//         transition: .8s ease all;
-//    &.moves{
-//        -webkit-transform: translateX(calc(18.75em));
-//            -ms-transform: translateX(calc(18.75em));
-//                transform: translateX(calc(18.75em));
-//    }
-// }
-}
+
 @media (max-width:700px) {
     body{
         font-size: 15px;
