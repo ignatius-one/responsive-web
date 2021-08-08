@@ -1,0 +1,172 @@
+$tag:#DADFE1;
+$white:#ffffff;
+$bg-article:#f1faee;
+$black:#000;
+$leatter:#212529;
+$red:#d00000;
+$blue:#0466c8;
+
+
+
+
+
+
+@mixin button($bgcolor,$color) {
+    margin-top: 1.25em;
+    background-color: $blue;
+    color: $white;
+    border-radius: .375em;
+    outline: none;
+    font-size:1rem;
+    border: none;
+    padding: .3125em;
+    cursor: pointer;
+    &:hover{
+        opacity: .9;
+    }
+}
+
+.container-post{
+    width: 90%;
+    margin: 0 auto;
+
+// container & filtre categories 
+ input[type='radio']{
+    display: none;
+    }
+
+.container-category{
+    width: 100%;
+    padding: .75em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25em;
+   
+    label{
+        color: $white;
+        padding:.375em;
+        background-color: $blue;
+        font-size: 1.25em;
+        margin-left: 1.25em;
+        cursor: pointer;
+        border-radius: .3125em;
+        transition: .8s ease all;
+        &:hover{
+            opacity: .8;
+        }
+    }
+}
+[value="HTML"],
+[value="CSS"],
+[value="JS"],
+[value="PHP"],
+[value="other"]{
+    animation: show-hidden 2s ease;
+}
+
+[value="all"]:checked ~ .posts .post[data-category]{
+        display: block;
+    }
+
+
+// system filtre 
+[value="HTML"]:checked ~ .posts .post:not([data-category ~="HTML"]),
+[value="CSS"]:checked ~ .posts .post:not([data-category ~="CSS"]),
+[value="JS"]:checked ~ .posts .post:not([data-category ~="JS"]),
+[value="PHP"]:checked ~ .posts .post:not([data-category ~="PHP"]),
+[value="other"]:checked ~ .posts .post:not([data-category ~="other"])
+{
+        display: none;
+    }
+
+ 
+[value="all"]:checked ~ .container-category [for="all"],
+[value="HTML"]:checked ~ .container-category [for="HTML"],
+[value="CSS"]:checked ~ .container-category [for="CSS"],
+[value="JS"]:checked ~ .container-category [for="JS"],
+[value="PHP"]:checked ~ .container-category [for="PHP"],
+[value="other"]:checked ~ .container-category [for="other"]
+{
+     background-color: $white;
+     color: $blue;
+ }
+
+
+
+
+    .posts{
+        background-color:$bg-article ;
+        border-radius: .75em;
+        width: 100%;
+        display: grid;
+        gap: 1.25em;
+        grid-template-columns: repeat(3,1fr);
+        
+        margin-top: 1.25em;
+        padding: 1.25em;
+        @media (max-width:1024px) {
+            grid-template-columns: repeat(2,1fr);
+        }
+        @media (max-width:635px) {
+           
+            grid-template-columns: repeat(1,1fr);
+        }
+        .post{
+            width: 18.75em;
+            background-color:$white;
+            // padding-bottom: .75em;
+            box-shadow: 0 0 1.25em -1.25em $black ;
+            border-radius: .375em;
+            overflow: hidden;
+            padding: .75em .75em .75em;
+            transition: .8s ease;
+
+            .ctn-img{
+                width: 100%;
+                img{
+                    border-radius: .375em;
+                    width:100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            h2{
+                    color: $leatter;
+                    font-size: 1.125em;
+                    margin-top: 1.25em;
+                    padding: 0 1.25esm;
+            }
+            span{
+                    color: $leatter;
+                    display: block;
+                    margin-top: .75em;
+                    padding: 0 1.25em;
+            }
+            ul.ctn-tag{
+                    color: $leatter;
+                    width: 100%;
+                    display: flex;
+                    list-style: none;
+                    flex-wrap: wrap;
+                    gap: .3125em;
+                    margin-top: .75em;
+                    margin-bottom: .75em;
+                    li{
+                        font-size: .875em;
+                        color: $leatter;
+                        font-weight: bold;
+                        border-radius: .25em;
+                        background-color: $tag;
+                        padding: .375em .625em;
+                        cursor: default;
+                    }
+                }
+                a{
+                    @include button($blue,$white );
+                    
+                }
+        }
+
+    }
+
+}

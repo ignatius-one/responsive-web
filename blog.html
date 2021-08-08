@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Design Page</title>
+    <link rel="stylesheet" href="./style/blog/blog.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <!-- font-family: 'Roboto', sans-serif; -->
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+
+    <!-- menu - nav  -->
+    <header>
+        <div class="header-container" >
+            
+            <div class="logo">
+                <h1>Das <b>Hause</b></h1>
+            </div>
+
+            <div class="menu" id="menu-show">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="menu-select"><a href="#">Blog</a></li>
+                        <li><a href="#">Tutorial</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="icon-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </div>
+    </header>
+    <!-- menu - nav  -->
+
+    <div class="conatiner-all" id="move-content">
+
+    <!-- cover  -->
+    <div class="container-nav">
+        <div class="container-nav-content">
+            <h1>Find what you want!</h1>
+            <p> Architecto perspiciatis asperiores adipisci modi ullam iusto labore doloremque numquam unde ex dolorum illo temporibus deserunt, maiores deleniti aliquid, eos doloribus possimus?</p>
+        </div>
+    </div>
+    <!-- cover close  -->
+
+    <!-- Filtre and articles  -->
+   <div class="container-post">
+  
+    <!-- FILTRE  -->
+    <input type="radio" id="all" name="categories" value="all" checked>
+    <input type="radio" id="HTML" name="categories" value="HTML">
+    <input type="radio" id="CSS" name="categories" value="CSS">
+    <input type="radio" id="JS" name="categories" value="JS">
+    <input type="radio" id="PHP" name="categories" value="PHP">
+    <input type="radio" id="other" name="categories" value="other">
+
+    <div class="container-category">
+
+        <label for="all">All</label>
+        <label for="HTML">HTML</label>
+        <label for="CSS">CSS</label>
+        <label for="JS">JS</label>
+        <label for="PHP">PHP</label>
+        <label for="other">other</label>
+        
+    </div>
+
+
+        <div class="posts">
+
+        <div class="post" data-category="HTML">
+            <div class="ctn-img">
+                <img src="./src/media-blog/how-page-html-css.jpg" alt="" srcset="">
+            </div>
+            <h2>How To Create a page web with Html & Css </h2>
+            <span>26 February 2020 1:34 pm </span>
+            <ul class="ctn-tag">
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post" data-category="JS">
+            <div class="ctn-img">
+                <img src="./src/media-blog/code-js.jpg" alt="" srcset="">
+            </div>
+            <h2>How To Learn Js & PHP </h2>
+            <span>26 February 2020 1:34 pm </span>
+            <ul class="ctn-tag">
+                <li>JS</li>
+                <li>PHP</li>
+            </ul>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post" data-category="CSS">
+            <div class="ctn-img">
+                <img src="./src/media-blog/code-css.jpg" alt="" srcset="">
+            </div>
+            <h2>How To Learn CSS </h2>
+            <span>26 February 2020 1:34 pm </span>
+            <ul class="ctn-tag">
+                <li>CSS</li>
+            </ul>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post" data-category="HTML">
+            <div class="ctn-img">
+                <img src="./src/media-blog/html.jpg" alt="" srcset="">
+            </div>
+            <h2>How To Learn HTML  </h2>
+            <span>26 February 2020 1:34 pm </span>
+            <ul class="ctn-tag">
+                <li>HTML</li>
+            </ul>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post" data-category="other" >
+            <div class="ctn-img">
+                <img src="./src/media/slide-img3.jpg" alt="" srcset="">
+            </div>
+            <h2>How to decorate your house </h2>
+            <span>26 February 2020 1:34 pm </span>
+            <ul class="ctn-tag">
+                <li>other</li>
+            </ul>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post" data-category="other">
+            <div class="ctn-img">
+                <img src="./src/media/slide-img4.jpg" alt="" srcset="">
+            </div>
+            <h2>How to sell and buy domestic </h2>
+            <span>26 February 2020 1:34 pm </span>
+            <ul class="ctn-tag">
+                <li>other</li>
+            </ul>
+            <a href="#">Read More</a>
+        </div>
+
+       
+   </div>
+   <!-- end container-post  -->
+   </div>
+
+
+
+    <!-- Filtre and articles  -->
+
+    <footer>
+       <div class="footer-logo">
+                <h1>Das <b>Hause</b></h1>
+       </div>
+       <div class="social-media">
+           <a href="#"><i class="fab f fa-facebook"></i></a>
+           <a href="#"><i class="fab i fa-instagram"></i></a>
+           <a href="#"><i class="fab t fa-twitter"></i></a>
+       </div>
+       <hr>
+       <h4>&#169 Iganatius | <span id="date">2025</span> all rights reserved</h4>
+    </footer>
+
+    
+
+    <script src="./scrip/scrip.js"></script>
+</body>
+</html>

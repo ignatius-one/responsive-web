@@ -1,0 +1,68 @@
+
+
+$white:#ffffff;
+$black:#000;
+$leatter:#212529;
+$red:#d00000;
+$blue:#0466c8;
+
+
+
+.container-nav{
+    width: 100%;
+    height: 50vh;
+    margin-top: 5em;
+    
+        position: relative;
+    background: url(../../src/media/aside-img1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       background: rgba(18, 194, 233,.7);  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, rgb(246, 79, 89,.7), rgba(196, 113, 237,.7), rgba(18, 194, 233,.7));  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, rgb(246, 79, 89,.7), rgba(196, 113, 237,.7), rgba(18, 194, 233,.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .container-nav-content{
+   
+       
+                    margin: auto;
+                    max-width:  50em;
+                    height: 50vh;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -ms-flex-line-pack: center;
+                        align-content: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
+        color: $white;
+                    position: relative;
+                     z-index: 1;
+                     letter-spacing: .0625em;
+      h1{
+          font-size: 2.5em;
+        }
+        p{
+          font-size: 1.0625em;
+      }
+    }
+}
