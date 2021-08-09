@@ -6,7 +6,7 @@ $blue:#0466c8;
 .btn-top-container{
     position: fixed;
     bottom: 3.5em;
-    right: 3em;
+    right: .9375em;
     width: 3.5em;
     height: 3.5em;
     z-index: -1;
@@ -19,9 +19,9 @@ $blue:#0466c8;
         cursor: pointer;
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50% , -50%);
-            -ms-transform: translate(-50% , -50%);
-                transform: translate(-50% , -50%);
+                         -webkit-transform: translate(-50% , -50%);
+                         -ms-transform: translate(-50% , -50%);
+        transform: translate(-50% , -50%);
         z-index: -1;
     }
     i{
@@ -29,45 +29,45 @@ $blue:#0466c8;
         top: 48%;
         font-size: 1.7em;
         left: 50%;
-        -webkit-transform: translate(-50% , -50%) scale(0);
-            -ms-transform: translate(-50% , -50%) scale(0);
-                transform: translate(-50% , -50%) scale(0);
+                    -webkit-transform: translate(-50% , -50%) scale(0);
+                    -ms-transform: translate(-50% , -50%) scale(0);
+        transform: translate(-50% , -50%) scale(0);
         color: $white;
-        -webkit-transition: .2s;
-        -o-transition: .2s;
+                    -webkit-transition: .2s;
+                    -o-transition: .2s;
         transition: .2s;
     }
 }
 .show-top{
     z-index: 10;
     .btn-top-up{
-    -webkit-animation: popup .3s ease-in-out;
-            animation: popup .3s ease-in-out;
+                 -webkit-animation: popup .3s ease-in-out;
+    animation: popup .3s ease-in-out;
     width: 3.5em;
     height: 3.5em;
     z-index: 2;
 }
     i{
-        -webkit-transform: translate(-50%, -50%) scale(1);
-            -ms-transform: translate(-50%, -50%) scale(1);
-                transform: translate(-50%, -50%) scale(1);
+                -webkit-transform: translate(-50%, -50%) scale(1);
+                -ms-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     }
 }
-@-webkit-keyframes popup {
-    0%{
-        width: 0;
-        height: 0;
-    }
-    50%{
-        width: 4em;
-        height: 4em;
-    }
-    100%{
-        width: 3.5em;
-        height: 3.5em;
-    }
-    
-}
+                            @-webkit-keyframes popup {
+                                0%{
+                                    width: 0;
+                                    height: 0;
+                                }
+                                50%{
+                                    width: 4em;
+                                    height: 4em;
+                                }
+                                100%{
+                                    width: 3.5em;
+                                    height: 3.5em;
+                                }
+                                
+                            }
 @keyframes popup {
     0%{
         width: 0;

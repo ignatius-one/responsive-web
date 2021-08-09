@@ -1,0 +1,21 @@
+
+
+.container_contact_media{
+    position: fixed;
+    bottom: 25%;
+    right: .625em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+   
+    img{
+        margin-top: .3125em;
+        width: 2.8125em;
+        transition: .3s ease all;
+         &:hover{
+        opacity: .8;
+        transform: scale(1.1);
+          }
+    }
+}

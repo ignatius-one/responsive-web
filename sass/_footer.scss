@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
+
 
 $white:#ffffff;
 $black:#000;
@@ -19,24 +14,24 @@ footer{
      .footer-logo{ 
         margin: auto;
         height: 5em;
-        display: -webkit-box;
-        display: -ms-flexbox;
+                         display: -webkit-box;
+                         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-                    h1{font-size: 1.5625em; text-transform: uppercase; letter-spacing: .0625em; text-shadow: 1px 1px .625em $blue ; color:$leatter;&::first-letter{color: $blue;}}                  
+                         -webkit-box-align: center;
+                         -ms-flex-align: center;
+        align-items: center;
+                         -webkit-box-pack: center;
+                         -ms-flex-pack: center;
+        justify-content: center;
+        h1{font-size: 1.5625em; text-transform: uppercase; letter-spacing: .0625em; text-shadow: 1px 1px .625em $blue ; color:$leatter;&::first-letter{color: $blue;}}                  
         }
         .social-media{
             text-align: center;
             .fab{
                 padding: .3125em;
                 border-radius: 50%;  
-                -webkit-transition: .6s ease-in all;  
-                -o-transition: .6s ease-in all;  
+                                    -webkit-transition: .6s ease-in all;  
+                                    -o-transition: .6s ease-in all;  
                 transition: .6s ease-in all;      
             }
             .f:hover{
@@ -45,8 +40,8 @@ footer{
             }
             .i:hover{
                 color: $white;
-                background: #d6249f;
-                background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                                         background: #d6249f;
+                                         background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
                 background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
             }
             .t:hover{
