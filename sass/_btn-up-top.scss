@@ -1,0 +1,86 @@
+
+
+$white:#ffffff;
+$blue:#0466c8;
+
+.btn-top-container{
+    position: fixed;
+    bottom: 4em;
+    right: 4em;
+    width: 4em;
+    height: 4em;
+    z-index: -1;
+   
+    .btn-top-up{
+        width: 0;
+        height: 0;
+        background-color: $blue;
+        border-radius: 50%;
+        cursor: pointer;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50% , -50%);
+            -ms-transform: translate(-50% , -50%);
+                transform: translate(-50% , -50%);
+        z-index: -1;
+       
+    }
+    i{
+        position: absolute;
+        top: 48%;
+        font-size: 1.7em;
+        left: 50%;
+        -webkit-transform: translate(-50% , -50%) scale(0);
+            -ms-transform: translate(-50% , -50%) scale(0);
+                transform: translate(-50% , -50%) scale(0);
+        color: $white;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
+    }
+}
+.show-top{
+    z-index: 10;
+    .btn-top-up{
+    -webkit-animation: popup .3s ease-in-out;
+            animation: popup .3s ease-in-out;
+    width: 4em;
+    height: 4em;
+    z-index: 2;
+}
+    i{
+        -webkit-transform: translate(-50%, -50%) scale(1);
+            -ms-transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%) scale(1);
+    }
+}
+@-webkit-keyframes popup {
+    0%{
+        width: 0;
+        height: 0;
+    }
+    50%{
+        width: 5em;
+        height: 5em;
+    }
+    100%{
+        width: 4em;
+        height: 4em;
+    }
+    
+}
+@keyframes popup {
+    0%{
+        width: 0;
+        height: 0;
+    }
+    50%{
+        width: 5em;
+        height: 5em;
+    }
+    100%{
+        width: 4em;
+        height: 4em;
+    }
+    
+}
