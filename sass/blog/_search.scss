@@ -53,12 +53,13 @@ div#ctn-icon-search {
         margin: auto;
         font-size: 1.125em;
         outline: none;
+        border: 1px solid $blue;
     }
     
 }
 #Box-search{
         position: fixed;
-        top: 9.0625em;
+        top: 8.991em;
     //    center a element fixed 
                 left: 50%;
                 -webkit-transform: translateX(-50%);

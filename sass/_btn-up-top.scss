@@ -5,16 +5,16 @@ $blue:#0466c8;
 
 .btn-top-container{
     position: fixed;
-    bottom: 4em;
-    right: 4em;
-    width: 4em;
-    height: 4em;
+    bottom: 3.5em;
+    right: 3em;
+    width: 3.5em;
+    height: 3.5em;
     z-index: -1;
    
     .btn-top-up{
         width: 0;
         height: 0;
-        background-color: $blue;
+        background-color: $black;
         border-radius: 50%;
         cursor: pointer;
         top: 50%;
@@ -23,7 +23,6 @@ $blue:#0466c8;
             -ms-transform: translate(-50% , -50%);
                 transform: translate(-50% , -50%);
         z-index: -1;
-       
     }
     i{
         position: absolute;
@@ -44,8 +43,8 @@ $blue:#0466c8;
     .btn-top-up{
     -webkit-animation: popup .3s ease-in-out;
             animation: popup .3s ease-in-out;
-    width: 4em;
-    height: 4em;
+    width: 3.5em;
+    height: 3.5em;
     z-index: 2;
 }
     i{
@@ -60,12 +59,12 @@ $blue:#0466c8;
         height: 0;
     }
     50%{
-        width: 5em;
-        height: 5em;
-    }
-    100%{
         width: 4em;
         height: 4em;
+    }
+    100%{
+        width: 3.5em;
+        height: 3.5em;
     }
     
 }
@@ -75,12 +74,12 @@ $blue:#0466c8;
         height: 0;
     }
     50%{
-        width: 5em;
-        height: 5em;
-    }
-    100%{
         width: 4em;
         height: 4em;
+    }
+    100%{
+        width: 3.5em;
+        height: 3.5em;
     }
     
 }
